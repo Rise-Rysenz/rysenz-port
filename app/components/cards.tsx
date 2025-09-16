@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "motion/react";
-
+import "../globals.css"
 export default function App() {
     const [images, setImages] = useState([]);
   

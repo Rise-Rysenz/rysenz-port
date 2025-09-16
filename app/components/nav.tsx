@@ -2,6 +2,7 @@
 import { FaAngleDown } from "react-icons/fa";
 import { motion } from "motion/react";
 import { useState } from "react";
+import "../globals.css"
 
 export default function App() {
     const [isMenu, setShow] = useState(false);

@@ -3,6 +3,8 @@ import Image from "next/image";
 import BANNER from '../public/banner.png';
 import { motion } from "motion/react";
 import CARD from './components/cards';
+import "./globals.css"
+
 export default function Home() {
 
   return (
