@@ -1,10 +1,14 @@
 @import "tailwindcss";
-
+@font-face {
+  font-family: "LINESeedSansTH";
+  src: url("../public/font/LINESeedSansTH_W_Rg.woff2");
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
   cursor: default;
   user-select: none;
+  font-family: "LINESeedSansTH", serif;
 }
 
 body {
