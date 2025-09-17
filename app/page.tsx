@@ -24,7 +24,7 @@ export default function Home() {
             <div id="main_card" className=" w-full h-fit rounded-md overflow-hidden flex gap-10 flex-col content-center text-center items-center not-sm:p-4">
               <Image src={BANNER} alt="Banner" className=" blur-sm not-sm:hidden"/>
               <div className="flex flex-col not-sm:flex-col text-center sm:absolute items-center gap-10">
-                <div id="pfp" className="bg-[#3a3a3a] not-sm:hidden sm:w-30 sm:h-30 lg:w-50 lg:h-50 absolute sm:-top-20 lg:-top-14  content-center overflow-hidden rounded-full border-double border-8 border-[#242424]">
+                <div id="pfp" className="bg-[#3a3a3a] not-sm:hidden sm:w-30 sm:h-30 lg:w-50 lg:h-50 absolute sm:-top-20 lg:-top-20 2xl:-top-14 2xl:h-66 2xl:w-66  content-center overflow-hidden rounded-full border-double border-8 border-[#242424]">
                   <Image 
                     src="https://mc-heads.net/body/Rysenz"
                     alt="Profile" 
@@ -41,7 +41,7 @@ export default function Home() {
                     height={200}
                     className="top-96 border-4 border-2 border-transparent sm:hidden rounded-full"
                   />
-                <div className="not-sm:text-center sm:content-center sm:items-center sm:absolute sm:top-12 sm:w-2xl lg:top-36" id="text-top">
+                <div className="not-sm:text-center sm:content-center sm:items-center sm:absolute sm:top-12 sm:w-2xl lg:top-34 2xl:top-56" id="text-top">
                   <h1 className=" not-sm:text-sm font-bold lg:text-4xl sm:text-sm">Welcome Everyone; I'm Rise</h1>
                   <p className=" not-sm:text-sm lg:">I'm Pixelartist/Developer/CEO At Rysenz Studio</p>
                 </div>
