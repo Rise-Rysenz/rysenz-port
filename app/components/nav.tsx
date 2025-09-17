@@ -3,6 +3,8 @@ import { FaAngleDown } from "react-icons/fa";
 import { motion } from "motion/react";
 import { useState } from "react";
 import "../globals.css"
+import { FaBluesky, FaDiscord } from "react-icons/fa6";
+import { GiAnvilImpact } from "react-icons/gi";
 
 export default function App() {
     const [isMenu, setShow] = useState(false);
@@ -44,10 +46,15 @@ export default function App() {
                 exit={{ y: 0,opacity: 0 }}
                 transition={{ type: "spring", damping: 20, stiffness: 120 }}
               >
-                <div className=" rounded-2xl bg-[#3a3a3a] p-2 w-fit h-fit shadow-2xl flex flex-col text-start gap-2 font-bold border-2">
-                    <a href="https://discord.gg/35ByVCm5ah" target="blank">Discord</a>
-                    <a href="https://mcmodels.net/vendors/3/rysenz" target="blank">MCmodel</a>
-                    <a href="https://bsky.app/profile/rysenz.bsky.social" target="blank">BlueSky</a>
+                <div className=" rounded-md bg-[#3a3a3a] p-2 w-fit h-fit shadow-2xl flex flex-col items-center text-start gap-2 font-bold border-2 border-[#ff3939]">
+                    <p>You can found & talk to me here</p>
+                    <div className=" bg-[#464646] w-full h-0.5"/>
+                    <div className=" flex flex-row items-center gap-2">
+                    <FaDiscord /><a href="https://discord.gg/35ByVCm5ah" target="blank"> Discord</a>
+                    <GiAnvilImpact /><a href="https://mcmodels.net/vendors/3/rysenz" target="blank"> MCmodel</a>
+                    <FaBluesky /><a href="https://bsky.app/profile/rysenz.bsky.social" target="blank"> BlueSky</a>
+                    </div>
+
                 </div>
               </motion.div>
             </div>
