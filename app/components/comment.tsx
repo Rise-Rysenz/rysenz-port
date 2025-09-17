@@ -58,7 +58,7 @@ export default function Reviews() {
           ))}
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {reviews.map((review, index) => (
             <motion.div
               key={review.id}
@@ -75,7 +75,7 @@ export default function Reviews() {
               {/* ชื่อและ rating */}
               <div className="flex justify-between items-center mb-3">
                 <h3 className="font-semibold text-lg">{review.name}</h3>
-                <div className="flex">
+                <div className="flex not-sm:hidden">
                   {renderStars(review.rating)}
                 </div>
               </div>
