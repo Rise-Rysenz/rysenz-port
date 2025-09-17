@@ -7,20 +7,20 @@ export default function App() {
     const [images, setImages] = useState([]);
   
   useEffect(() => {
-    fetch('/api/portfolio-images')
+    fetch('/api/guis')
       .then(res => res.json())
       .then(data => setImages(data.images))
       .catch(err => console.error('Error loading images:', err));
   }, []);
     return (
-        <div className="flex flex-col bg-[#3a3a3a] w-full h-fit p-5 text-center text-5xl gap-5">
-            <h1>Pixelart</h1>
-            <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center  items-center rounded-md gap-4 content-center text-center items-center">
+        <div className="flex flex-col bg-[#3a3a3a] w-full h-fit p-5 text-center text-5xl gap-5 z-10">
+            <h1 className=" not-sm:text-[1.5rem]">Minecraft Custom Gui</h1>
+            <div className=" grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 justify-center justify-items-center  items-center rounded-md gap-4 not-sm:gap-1 content-center text-center items-center">
             {images.length > 0 ? (
               images.map((imageName, index) => (
                 <motion.div 
                   key={index} 
-                  className="shadow-2xl bg-[#252525] rounded-md h-fit w-fit overflow-hidden col-span-1 p-5"
+                  className="shadow-2xl bg-[#252525] rounded-md h-fit w-full h-full overflow-hidden col-span-1 p-1 sm:p-5"
                   whileInView={{translateY: [20,0], opacity:[0,1]}}
                   transition={{
                       duration: 1,

@@ -15,7 +15,7 @@ export default function App() {
         });
     };
     return (
-        <div className=" bg-[#3a3a3a] flex flex-row absolute top-0 left-0 w-full p-5 text-center shadow-2xl items-center content-center gap-5 justify-center">
+        <div className=" bg-[#3a3a3a] z-50 flex flex-row fixed top-0 left-0 w-full p-5 text-center shadow-2xl items-center content-center gap-5 justify-center">
             <a className=" flex flex-row text-center items-center text-2xl" onClick={changeShow}>Contact
                 <motion.div
                     animate={{
@@ -53,7 +53,7 @@ export default function App() {
             </div>
             )}
             <div className="self-end right-5 absolute bg-lime-600 font-bold not-sm:hidden p-2 rounded-br-2xl rounded-tl-2xl scale-50 sm:scale-100">Commission open</div>
-            <div className="self-end right-5 absolute bg-lime-600 sm:hidden p-2 rounded-full  sm:scale-100"></div>
+            <div className="self-end top-6 right-5 absolute bg-lime-600 sm:hidden p-2 rounded-full  sm:scale-100"/>
         </div>
     )
 }
