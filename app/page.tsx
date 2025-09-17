@@ -4,6 +4,7 @@ import BANNER from '../public/banner.png';
 import { motion } from "motion/react";
 import CARD from './components/gui_cards';
 import MODELS from './components/models_cards';
+import COMMENTS from './components/comment';
 import "./globals.css"
 
 export default function Home() {
@@ -48,6 +49,7 @@ export default function Home() {
             </div>
             <CARD/>
             <MODELS/>
+            <COMMENTS />
             <footer className=" bottom-5 z-40">Also this website made by me too - Rise</footer>
           </main>
         </div>

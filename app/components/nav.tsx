@@ -9,7 +9,7 @@ export default function App() {
     const changeShow = () => {
     setShow(prevShow => {
             if (prevShow === true) {
-              return false;
+                return false;
             }
             return true;
         });
