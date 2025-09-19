@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import CARD from './components/gui_cards';
 import MODELS from './components/models_cards';
 import COMMENTS from './components/comment';
+import PFP from '../public/pfp.png';
 import "./globals.css"
 
 export default function Home() {
@@ -26,20 +27,20 @@ export default function Home() {
               <div className="flex flex-col not-sm:flex-col text-center sm:absolute items-center gap-10">
                 <div id="pfp" className="bg-[#3a3a3a] not-sm:hidden sm:w-30 sm:h-30 lg:w-50 lg:h-50 absolute sm:-top-20 lg:-top-20 2xl:-top-14 2xl:h-66 2xl:w-66  content-center overflow-hidden rounded-full border-double border-8 border-[#242424]">
                   <Image 
-                    src="https://mc-heads.net/body/Rysenz"
+                    src={PFP}
                     alt="Profile" 
                     width={1000}
                     height={1000}
-                    className="top-96 border-4 border-2 border-transparent w-full"
+                    className="top-96 border-transparent w-full"
                   />
                   
                 </div>
                 <Image 
-                    src="https://mc-heads.net/avatar/Rysenz"
+                    src={PFP}
                     alt="Profile" 
                     width={200}
                     height={200}
-                    className="top-96 border-4 border-2 border-transparent sm:hidden rounded-full"
+                    className="top-96 border-transparent sm:hidden rounded-full"
                   />
                 <div className="not-sm:text-center sm:content-center sm:items-center sm:absolute sm:top-12 sm:w-2xl lg:top-34 2xl:top-56" id="text-top">
                   <h1 className=" not-sm:text-sm font-bold lg:text-4xl sm:text-sm">Welcome Everyone; I'm Rise</h1>

@@ -20,7 +20,7 @@ export default function App() {
                 images.map((imageName, index) => (
                   <motion.div 
                     key={index} 
-                    className="shadow-2xl bg-[#252525] hover:border-2 hover:border-[#ff3939] flex rounded-md not-sm:w-[9rem] not-sm:h-[8rem] sm:w-[17rem] sm:h-[17rem] lg:w-[22rem] 2xl:w-[35rem] 2xl:h-[21rem] overflow-hidden p-1 sm:p-5"
+                    className="shadow-2xl bg-[#252525] hover:border-2 hover:border-[#ff3939] flex rounded-md not-sm:w-[8rem] not-sm:h-[8rem] sm:w-[17rem] sm:h-[17rem] lg:w-[22rem] 2xl:w-[35rem] 2xl:h-[21rem] overflow-hidden p-1 sm:p-5"
                     whileInView={{translateY: [20,0], opacity:[0,1]}}
                     transition={{
                         duration: 1,
