@@ -5,7 +5,8 @@ import { motion } from "motion/react";
 import CARD from './components/gui_cards';
 import MODELS from './components/models_cards';
 import COMMENTS from './components/comment';
-import PFP from '../public/pfp.png';
+import AM from './components/aboutme';
+import PFP from '../public/pfp_2.png';
 import "./globals.css"
 
 export default function Home() {
@@ -48,6 +49,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <AM/>
             <CARD/>
             <MODELS/>
             <COMMENTS />

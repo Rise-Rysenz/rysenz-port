@@ -59,8 +59,6 @@ export default function App() {
               </motion.div>
             </div>
             )}
-            <div className="self-end right-5 absolute bg-lime-600 font-bold not-sm:hidden p-2 rounded-br-2xl rounded-tl-2xl scale-50 sm:scale-100">Commission open</div>
-            <div className="self-end top-6 right-5 absolute bg-lime-600 sm:hidden p-2 rounded-full  sm:scale-100"/>
         </div>
     )
 }

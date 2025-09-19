@@ -15,12 +15,12 @@ export default function App() {
     return (
         <div className="flex flex-col bg-[#3a3a3a] w-full h-fit p-5 text-center gap-5 z-10">
             <h1 className=" not-sm:text-[1.2rem] sm:text-[2.5rem] font-bold">Minecraft Custom Gui & Art</h1>
-            <div className=" grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 justify-items-center rounded-md not-sm:gap-1 gap-4 content-center text-center items-center">
+            <div className=" grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 justify-items-center rounded-md not-sm:gap-1 gap-4 content-center text-center items-center">
               {images.length > 0 ? (
                 images.map((imageName, index) => (
                   <motion.div 
                     key={index} 
-                    className="shadow-2xl bg-[#252525] hover:border-2 hover:border-[#ff3939] flex rounded-md not-sm:w-[8rem] not-sm:h-[8rem] sm:w-[17rem] sm:h-[17rem] lg:w-[22rem] 2xl:w-[35rem] 2xl:h-[21rem] overflow-hidden p-1 sm:p-5"
+                    className="shadow-2xl bg-[#252525] hover:border-2 hover:border-[#ff3939] flex rounded-md not-sm:w-[8rem] not-sm:h-[8rem] sm:w-[17rem] sm:h-[17rem] lg:w-[22rem] 2xl:w-[25rem] 2xl:h-[25rem] overflow-hidden p-1 sm:p-5"
                     whileInView={{translateY: [20,0], opacity:[0,1]}}
                     transition={{
                         duration: 1,
