@@ -21,7 +21,7 @@ export default function Home() {
             times: [0, 0.8]
         }}
       >
-        <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+        <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
           <main className="flex flex-col gap-[32px] row-start-2 items-center w-full justify-center">
             <div id="main_card" className=" w-full h-fit rounded-md overflow-hidden flex gap-10 flex-col content-center text-center items-center not-sm:p-4">
               <Image src={BANNER} alt="Banner" className=" blur-sm not-sm:hidden"/>
